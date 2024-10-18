@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+main section {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #e6f2ff;
+}
+
+main section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #004080;
+}
+
+main section article p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Lista de servicios */
+ul {
+    font-family: 'Verdana', sans-serif;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Imágenes */
+main section article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Formulario de consultas */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #0059b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox para el layout */
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    form input, form textarea, form button {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+}
